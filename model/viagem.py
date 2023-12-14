@@ -1,10 +1,8 @@
 from sqlalchemy import Column, Integer, String, Text, Float, DateTime
-from sqlalchemy.ext.declarative import declarative_base
 from datetime import datetime
 from typing import Union
+from  model import Base
 
-
-Base = declarative_base()
 class Viagem(Base):
     __tablename__ = 'viagem'
 
